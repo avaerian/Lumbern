@@ -23,6 +23,7 @@ public class Lumbern {
         }
 
         System.out.println("Closing window");
+        // window.terminate();
 
         // TODO: move this to Window class
         // This will require some rewriting and code clean up

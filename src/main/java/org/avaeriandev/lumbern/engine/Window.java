@@ -62,8 +62,11 @@ public class Window {
         }
     }
 
+    // TODO: consider glfwSetWindowCloseCallback() to close the window nicely
+    // This would provide abstraction of all GLFW code away from other engine code
     public void close() {
         glfwSetWindowShouldClose(window, true);
+        glfwDestroyWindow(window);
 
         /*
             pseudo-code
